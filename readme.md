@@ -921,11 +921,16 @@
 ## 3 PSR - D'interfaces
 
 Les interfaces sont des modèles de code, de classe ayant pour objectif de standardiser les framework et les librairies. 
-L'objectif est de retrouver les mêmes logiques, méthodes quelque soit les framework et librairies utilisée.
+
+L'objectif est de retrouver les mêmes logiques, méthodes quelque soit les framework et librairies utilisés.
+
 Cela permet d'avoir un large éventail de modules, de codes pouvant facilement s'interconnecter.
+
 Les interfaces sont souvent de simples Classes contenant des méthodes vides.
+
 On les trouvent via le namespace Psr\.
-Même si vous ne coder pas de framework ou lib, c'est utile de les connaîtres pour mieux comprendre leur framework que vous utilisez.
+
+Même si vous ne codez pas de framework ou lib, c'est utile de les connaître pour mieux comprendre le framework que vous utilisez.
 
 ### 3.1 PSR-3 : Logger Interface - Interface de Journalisation
 
