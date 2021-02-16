@@ -1,10 +1,58 @@
 # Résumé des PSR - PHP Standard Recommendation Fr en Français
 
-## 1 . PSR - DE CODING STYLE
-
   Voici regroupé des notes sur les PSR pour bien coder en PHP.
   Source : https://www.php-fig.org/psr/
 
+## Sommaire
+
+* [1 . PSR - DE CODING STYLE](#1--psr---de-coding-style)
+* [1.1 PSR-1 : Norme de base pour coder](#11-psr-1--norme-de-base-pour-coder)
+* [1.2 PSR-12: Style de codage étendu](#12-psr-12-style-de-codage-étendu)
+* [1.2.1 Les Fichiers :](#121-les-fichiers-)
+* [1.2.2 Les Lignes :](#122-les-lignes-)
+* [1.2.3 L'Indentation :](#123-lindentation-)
+* [1.2.4  Mots clés et types :](#124--mots-clés-et-types-)
+* [1.2.5 En-tête de fichier PHP:](#125-en-tête-de-fichier-php)
+   * [1.2.5.1 Fichiers HTML et PHP :](#1251-fichiers-html-et-php-)
+* [1.2.6 La profondeur maximale des espaces de noms :](#126-la-profondeur-maximale-des-espaces-de-noms-)
+* [1.2.7 Le mot-clé "declare" :](#127-le-mot-clé-declare-)
+* [1.2.8 Classes, propriétés et méthodes :](#128-classes-propriétés-et-méthodes-)
+   * [1.2.8.1 Les Traits :](#1281-les-traits-)
+   * [1.2.8.2  Propriétés et constantes](#1282--propriétés-et-constantes)
+* [1.2.9 Méthodes et fonctions :](#129-méthodes-et-fonctions-)
+   * [1.2.9.1 : Arguments de méthode et de fonction](#1291--arguments-de-méthode-et-de-fonction)
+   * [1.2.9.2 :  abstract, final et static](#1292---abstract-final-et-static)
+   * [1.2.9.3 : Appels de méthode et de fonction](#1293--appels-de-méthode-et-de-fonction)
+* [1.2.10 Structure de contrôles :](#1210-structure-de-contrôles-)
+   * [1.2.10.1 if, elseif, else :](#12101-if-elseif-else-)
+   * [1.2.10.2 switch, case :](#12102-switch-case-)
+   * [1.2.10.3  while, do while](#12103--while-do-while)
+   * [1.2.10.4  for](#12104--for)
+   * [1.2.10.5 foreach](#12105-foreach)
+   * [1.2.10.6 try, catch, finally](#12106-try-catch-finally)
+* [1.2.11 Opérateurs](#1211-opérateurs)
+   * [1.2.11.1 opérateurs unaires:](#12111-opérateurs-unaires)
+   * [1.2.11.2 opérateurs binaires :](#12112-opérateurs-binaires-)
+   * [1.2.11.3 opérateurs ternaires :](#12113-opérateurs-ternaires-)
+* [1.2.12 Les Closures](#1212-les-closures)
+* [1.2.13 Les Classes Anonymes](#1213-les-classes-anonymes)
+* [2 PSR - Documentation PHPDoc - DocStrings](#2-psr---documentation-phpdoc---docstrings)
+* [2.1 PSR-5 : PHPDoc Standard](#21-psr-5--phpdoc-standard)
+* [2.2 PSR-19 : PHPDoc tags](#22-psr-19--phpdoc-tags)
+* [3 PSR - D'interfaces](#3-psr---dinterfaces)
+* [3.1 PSR-3 : Logger Interface - Interface de Journalisation](#31-psr-3--logger-interface---interface-de-journalisation)
+* [3.2 PSR-4 : Autoloader - Interface de chargement automatique](#32-psr-4--autoloader---interface-de-chargement-automatique)
+* [3.4 PSR-6: Interface de mise en cache](#34-psr-6-interface-de-mise-en-cache)
+* [3.5 PSR-7 : HTTP message interfaces - Interface de manipulate des Messages HTTP](#35-psr-7--http-message-interfaces---interface-de-manipulate-des-messages-http)
+* [3.6 PSR-11: Container interface](#36-psr-11-container-interface)
+* [3.7 PSR-13: Link definition interfaces - Interface des Liens hypermédias](#37-psr-13-link-definition-interfaces---interface-des-liens-hypermédias)
+* [3.8 PSR-14:  Event Dispatcher - Interface des Répartiteurs d'événements](#38-psr-14--event-dispatcher---interface-des-répartiteurs-dévénements)
+* [3.9 PSR-15: HTTP Server Request Handlers | Gestionnaire de requêtes de serveur HTTP](#39-psr-15-http-server-request-handlers--gestionnaire-de-requêtes-de-serveur-http)
+* [3.10 PSR-17 :  HTTP  Factories](#310-psr-17---http--factories)
+* [3.11 PSR-18 :  HTTP  Client](#311-psr-18---http--client)
+
+
+## 1 . PSR - DE CODING STYLE
 
 ### 1.1 PSR-1 : Norme de base pour coder
 
